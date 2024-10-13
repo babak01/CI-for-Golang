@@ -19,14 +19,13 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    # Step 1: Set up Go with the correct version from go.mod
+    # Step 1: Set up Go version 1.23 explicitly
     - name: Set up Go
       uses: actions/setup-go@v3
       with:
-        go-version-file: 'go.mod'
-        cache: true
+        go-version: '1.23'
 
-    # Step 2: Ensure dependencies are downloaded
+    # Step 2: Download Go modules
     - name: Download Go modules
       run: go mod download
 
