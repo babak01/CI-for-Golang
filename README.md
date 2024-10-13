@@ -1,4 +1,4 @@
-# 02_05 CI for Go
+# CI for Go
 
 The following workflow updates the workflow suggested by GitHub Actions with the following:
 
